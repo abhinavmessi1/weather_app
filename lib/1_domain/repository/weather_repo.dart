@@ -1,4 +1,3 @@
-import 'package:weather_app/0_data/models/weather_forecast_model.dart';
 import 'package:weather_app/0_data/models/weather_report_model.dart';
 
 abstract class WeatherRepo {

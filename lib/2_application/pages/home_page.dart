@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/2_application/core/services/theme_service.dart';
+import 'package:weather_app/2_application/core/utils/colors/colors.dart';
 import 'package:weather_app/2_application/pages/cubits/cubit/forecast_cubit.dart';
 import 'package:weather_app/2_application/widgets/common_textfield.dart';
 import 'package:weather_app/theme.dart';
@@ -30,11 +31,12 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Container(
-        decoration: const BoxDecoration(
+        width: double.infinity,
+        decoration: BoxDecoration(
           gradient: RadialGradient(
             center: Alignment.center,
             radius: 0.8,
-            colors: [Colors.green, Colors.blue],
+            colors: [AppColor.myColor1, AppColor.myColor2],
           ),
         ),
         child: Column(
@@ -84,7 +86,6 @@ class HomePage extends StatelessWidget {
           image: AssetImage("assets/weather_image/weather_pp.png"),
           fit: BoxFit.fill,
         )));
-    ;
   }
 
   Widget forecastWidget() {

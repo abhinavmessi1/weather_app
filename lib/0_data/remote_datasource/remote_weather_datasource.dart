@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:weather_app/0_data/models/weather_forecast_model.dart';
 import 'package:weather_app/0_data/models/weather_report_model.dart';
 
 const String baseUrl = 'http://api.weatherapi.com/v1/forecast.json';
